@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* menu som er fra tidligere opgave i tema 5, men også fra det ekesmpel mikkel lagde ud*/
+header {
+  display: grid;
+  padding: 20px;
+  background-color: #f3e8d6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  grid-template-columns: repeat(2, auto);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+nav {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  color: #756aab;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* burgermenu - også af mikkel */
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #756aab;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.menu a:hover {
+  line-height: 100%;
+  border-bottom: 1.5px solid #756aab;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* generelt */
+html {
+  background-color: #f3e8d6;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* overskrifter */
+h1 {
+  font-family: "DM Serif Display", serif;
+  color: #f2b806;
+  font-size: 3rem;
+  align-items: center;
+}
+
+/* forside */
+.baggrund_forside img,
+.baggrund_cv img {
+  width: 100%;
+}
