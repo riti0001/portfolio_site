@@ -59,20 +59,8 @@ nav {
 }
 
 /* generelt */
-html,
-body {
+html {
   background-color: #f3e8d6;
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
 }
 
 /* footer */
@@ -84,7 +72,10 @@ footer {
   height: 8%;
   background-color: #f3e8d6;
   color: #756aab;
-  padding: 10px;
+  padding: 12%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5%;
+  z-index: 100;
 }
 
 ul {
@@ -92,6 +83,11 @@ ul {
   color: #756aab;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+  margin-top: 2%;
+}
+
+.li_kontakt {
+  margin-top: 2%;
 }
 
 .kontakt {
@@ -107,7 +103,18 @@ h1 {
   font-size: 3rem;
   text-align: center;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 1%;
+}
+
+.website_knap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+.website_knap img {
+  width: 50%;
 }
 
 h2 {
@@ -167,8 +174,27 @@ p {
 
 /* tema 2 */
 
-.a2 {
-  width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
+.a_2,
+.b_2,
+.c_2,
+.d_2,
+.e_2 {
+  display: grid;
+  place-items: center;
+}
+
+/* billeder på tema 2 */
+.a2,
+.b2,
+.c2,
+.d2,
+.e2 {
+  width: 60%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.p1 {
+  margin-right: 18%;
+  margin-left: 20%;
 }
