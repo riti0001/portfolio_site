@@ -64,36 +64,30 @@ html {
 }
 
 /* footer */
+
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  height: 8%;
   background-color: #f3e8d6;
   color: #756aab;
-  padding: 12%;
+  padding: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 5%;
-  z-index: 100;
-}
-
-ul {
-  list-style: none;
-  color: #756aab;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  margin-top: 2%;
-}
-
-.li_kontakt {
-  margin-top: 2%;
 }
 
 .kontakt {
   color: #756aab;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
+}
+
+.pkon {
+  color: #756aab;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-top: 2%;
 }
 
 /* overskrifter */
@@ -103,18 +97,26 @@ h1 {
   font-size: 3rem;
   text-align: center;
   padding-top: 5%;
-  padding-bottom: 1%;
+  padding-bottom: 4%;
 }
 
-.website_knap {
+.website_knap,
+.videosite_knap {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 3%;
   cursor: pointer;
 }
-.website_knap img {
+.website_knap img,
+.videosite_knap img {
   width: 50%;
+  margin-left: 25%;
+}
+
+.to_knapper {
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
@@ -137,12 +139,8 @@ p {
 }
 
 .grid_4_2 {
+  margin: 0 20% 0 20%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  margin-left: 20%;
-  margin-right: 20%;
-  row-gap: 10%;
 }
 
 .billede_tekst1,
@@ -151,6 +149,7 @@ p {
 .tekst_billede2 {
   display: grid;
   column-gap: 10%;
+  margin-bottom: 10%;
 }
 
 .tb1 {
@@ -197,4 +196,20 @@ p {
 .p1 {
   margin-right: 18%;
   margin-left: 20%;
+}
+
+/* cv */
+
+.portraet img {
+  width: 70%;
+}
+
+.grid_2_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 10% 20% 0 20%;
+}
+.cv_tekst2 {
+  grid-column: 1 / span2;
 }
