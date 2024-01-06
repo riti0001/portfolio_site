@@ -6,7 +6,8 @@
 
 /* menu som er fra tidligere opgave i tema 5, men også fra det ekesmpel mikkel lagde ud*/
 header {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
   background-color: #f3e8d6;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -58,8 +59,20 @@ nav {
 }
 
 /* generelt */
-html {
+html,
+body {
   background-color: #f3e8d6;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* footer */
@@ -68,10 +81,23 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-family: "Roboto", sans-serif;
+  height: 8%;
+  background-color: #f3e8d6;
+  color: #756aab;
+  padding: 10px;
 }
 
 ul {
   list-style: none;
+  color: #756aab;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.kontakt {
+  color: #756aab;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
 
 /* overskrifter */
@@ -79,11 +105,70 @@ h1 {
   font-family: "DM Serif Display", serif;
   color: #f2b806;
   font-size: 3rem;
-  align-items: center;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  color: #f2b806;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #f2b806;
+  font-size: 1rem;
 }
 
 /* forside */
 .baggrund_forside img,
 .baggrund_cv img {
   width: 100%;
+}
+
+.grid_4_2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  margin-left: 20%;
+  margin-right: 20%;
+  row-gap: 10%;
+}
+
+.billede_tekst1,
+.tekst_billede1,
+.billede_tekst2,
+.tekst_billede2 {
+  display: grid;
+  column-gap: 10%;
+}
+
+.tb1 {
+  grid-column: 1;
+}
+.bt1 {
+  grid-column: 2;
+}
+
+.mappe3,
+.mappe5 {
+  grid-column: 2;
+}
+
+.mappe2,
+.mappe3,
+.mappe4,
+.mappe5 {
+  cursor: pointer;
+}
+
+/* tema 2 */
+
+.a2 {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
