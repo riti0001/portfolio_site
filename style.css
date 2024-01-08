@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* menu som er fra tidligere opgave i tema 5, men også fra det ekesmpel mikkel lagde ud*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f3e8d6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  grid-template-columns: repeat(2, auto);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+nav {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  color: #756aab;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* burgermenu - også af mikkel */
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #756aab;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.menu a:hover {
+  line-height: 100%;
+  border-bottom: 1.5px solid #756aab;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* generelt */
+html {
+  background-color: #f3e8d6;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #f3e8d6;
+  color: #756aab;
+  padding: 6%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5%;
+}
+
+.kontakt {
+  color: #756aab;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-right: 5%;
+}
+
+/* p kontakt i footer */
+.pkon {
+  color: #756aab;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-top: 2%;
+}
+
+/* overskrifter */
+h1 {
+  font-family: "DM Serif Display", serif;
+  color: #f2b806;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+
+.website_knap,
+.videosite_knap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+.website_knap img,
+.videosite_knap img {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.to_knapper {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  color: #f2b806;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #f2b806;
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+/* forside */
+.baggrund_forside img,
+.baggrund_cv img {
+  width: 100%;
+}
+
+.grid_4_2 {
+  margin: 0 20% 0 20%;
+  display: grid;
+}
+
+.billede_tekst1,
+.tekst_billede1,
+.billede_tekst2,
+.tekst_billede2 {
+  display: grid;
+  column-gap: 10%;
+  margin-bottom: 10%;
+}
+
+.tb1 {
+  grid-column: 1;
+}
+.bt1 {
+  grid-column: 2;
+}
+
+.mappe3,
+.mappe5 {
+  grid-column: 2;
+}
+
+.mappe2,
+.mappe3,
+.mappe4,
+.mappe5 {
+  cursor: pointer;
+}
+
+/* tema 2 */
+
+.a_2,
+.b_2,
+.c_2,
+.d_2,
+.e_2 {
+  display: grid;
+  place-items: center;
+}
+
+/* billeder på tema 2 */
+.a2,
+.b2,
+.c2,
+.d2,
+.e2 {
+  width: 60%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.p1 {
+  margin-right: 18%;
+  margin-left: 20%;
+}
+
+/* cv */
+
+.portraet img {
+  width: 70%;
+  margin-bottom: 20%;
+  margin-top: 15%;
+}
+
+.grid_2_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 10% 20% 0 20%;
+}
+.cv_tekst2 {
+  grid-column: 1 / span2;
+}
