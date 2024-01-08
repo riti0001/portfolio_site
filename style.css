@@ -83,6 +83,7 @@ footer {
   font-size: 1.5rem;
 }
 
+/* p kontakt i footer */
 .pkon {
   color: #756aab;
   font-family: "Roboto", sans-serif;
@@ -130,6 +131,7 @@ p {
   font-family: "Roboto", sans-serif;
   color: #f2b806;
   font-size: 1rem;
+  line-height: 160%;
 }
 
 /* forside */
@@ -202,6 +204,8 @@ p {
 
 .portraet img {
   width: 70%;
+  margin-bottom: 20%;
+  margin-top: 15%;
 }
 
 .grid_2_2 {
