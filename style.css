@@ -76,20 +76,34 @@ footer {
   margin-top: 5%;
 }
 
-.kontakt {
+/* ikoner i footer */
+.insta {
+  width: 10%;
+  margin-left: 50%;
+}
+.mobil {
+  width: 10%;
+  margin-left: 5%;
+}
+.mail {
+  width: 14%;
+  margin-left: 5%;
+}
+
+/* .kontakt {
   color: #756aab;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   margin-right: 5%;
-}
+} */
 
 /* p kontakt i footer */
-.pkon {
+/* .pkon {
   color: #756aab;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   margin-top: 2%;
-}
+} */
 
 /* overskrifter og tekst*/
 h1 {
@@ -371,18 +385,32 @@ p {
     width: 70%;
   }
 
-  .kontakt {
+  /* ikoner i footer */
+  .insta {
+    width: 8%;
+    margin-left: 50%;
+  }
+  .mobil {
+    width: 8%;
+    margin-left: 5%;
+  }
+  .mail {
+    width: 11%;
+    margin-left: 5%;
+  }
+
+  /* .kontakt {
     color: #756aab;
     font-family: "Roboto", sans-serif;
     font-size: 100%;
     margin-right: 5%;
-  }
+  } */
 
   /* p kontakt i footer */
-  .pkon {
+  /* .pkon {
     color: #756aab;
     font-family: "Roboto", sans-serif;
     font-size: 90%;
     margin-top: 2%;
-  }
+  } */
 }
