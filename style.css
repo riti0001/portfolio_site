@@ -35,7 +35,7 @@ nav {
   padding: 0;
 }
 
-/* burgermenu - også af mikkel */
+/* hover på menu via a (anchortag) */
 .menu a {
   display: block;
   padding: 10px;
@@ -50,12 +50,6 @@ nav {
 .menu a:hover {
   line-height: 100%;
   border-bottom: 1.5px solid #756aab;
-}
-
-.icon-container {
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
 
 /* generelt */
@@ -279,6 +273,7 @@ p {
     margin-bottom: 10%;
   }
 
+  /* minus for at få dem til at være i samme kolonne og samtidig få billede og tekst byttet om på 3 og 5 */
   .tb1 {
     grid-column: -1;
   }
