@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* menu som er fra tidligere opgave i tema 5, men også fra det ekesmpel mikkel lagde ud*/
+/* menu som er fra tidligere opgave i tema 5, men også fra det ekesmpel mikkel lagde ud-----------------------------------------*/
 header {
   display: flex;
   justify-content: space-between;
@@ -28,6 +28,7 @@ nav {
   color: #756aab;
 }
 
+/* fjerner prikker på listen i menuen, og sætter dem ved siden af hinanden fremfor ovenpå hinanden */
 .menu {
   display: flex;
   list-style: none;
@@ -52,7 +53,24 @@ nav {
   border-bottom: 1.5px solid #756aab;
 }
 
-/* generelt */
+/* burgermenu */
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #756aab;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+/* generelt ------------------------------------------------------------------------------------------------------------*/
 html {
   background-color: #f3e8d6;
 }
@@ -146,7 +164,7 @@ p {
   justify-content: center;
 }
 
-/* forside */
+/* forside -------------------------------------------------------------------------------------------------------------*/
 .baggrund_forside img,
 .baggrund_cv img {
   width: 100%;
@@ -185,7 +203,7 @@ p {
   cursor: pointer;
 }
 
-/* tema 2 (og de andre temaer */
+/* tema 2 (og de andre temaer -------------------------------------------------------------------------------------------*/
 .a_2,
 .b_2,
 .c_2,
@@ -211,7 +229,7 @@ p {
   margin-left: 20%;
 }
 
-/* cv */
+/* cv ---------------------------------------------------------------------------------------------------------------------*/
 .portraet img {
   width: 70%;
   margin-bottom: 20%;
@@ -228,10 +246,10 @@ p {
   grid-column: 1 / span2;
 }
 
-/* mobilsite */
+/* mobilsite --------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 800px) {
-  /* overskrifter og tekst*/
+  /* overskrifter og tekst------------------------------------*/
   h1 {
     font-family: "DM Serif Display", serif;
     color: #f2b806;
@@ -257,7 +275,7 @@ p {
     line-height: 160%;
   }
 
-  /* forside */
+  /* forside --------------------------------------------------*/
   .grid_4_2 {
     margin: 0 15% 0 15%;
     display: grid;
@@ -293,7 +311,7 @@ p {
     grid-row: -5;
   }
 
-  /* cv */
+  /* cv ---------------------------------------------------------*/
   .portraet,
   .portraet img {
     width: 110%;
@@ -315,7 +333,7 @@ p {
     grid-column: 1 / span1;
   }
 
-  /* tema 2 (og de andre temaer */
+  /* tema 2 (og de andre temaer ------------------------------------ */
   .a_2,
   .b_2,
   .c_2,
@@ -342,7 +360,7 @@ p {
     margin-bottom: 10%;
   }
 
-  /* knapper */
+  /* knapper ------------------------------------------------------*/
   .website_knap,
   .videosite_knap {
     display: flex;
@@ -363,7 +381,7 @@ p {
     justify-content: center;
   }
 
-  /* footer */
+  /* footer --------------------------------------------------------*/
   footer {
     display: flex;
     justify-content: space-between;
@@ -408,4 +426,83 @@ p {
     font-size: 90%;
     margin-top: 2%;
   } */
+
+  /* burgermenu --------------------------------------------------*/
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  nav.active .menu {
+    display: block;
+    background-color: #756aab;
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+  nav.active .menu a {
+    font-size: 90%;
+  }
+  nav .menu a {
+  color: #756aab;
+  font-size: 90%;
+  }
+  
+
+
+
+
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

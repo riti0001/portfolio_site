@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Procesdokumentation</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Caudex&family=DM+Serif+Display&family=Permanent+Marker&family=Roboto:wght@100;400&family=Six+Caps&display=swap"
         rel="stylesheet">
@@ -99,7 +99,7 @@
             <h2>Wireframes</h2>
             <p>Jeg har udviklet wireframes, så det var nemmere at gå til prototypefasen. Så skulle jeg ikke tænke så
                 meget over,
-                hvordan det hele skulle sættes op, men fokuserer mere på designdetaljer. Mine wireframes er enkle, da
+                hvordan det hele skulle sættes op, men fokusere mere på designdetaljer. Mine wireframes er enkle, da
                 min hjemmeside
                 også skal være enkel. De er udviklet i figma, men ikke været tegnet i hånden, da jeg ikke følte jeg
                 havde brug for den
@@ -182,9 +182,71 @@
         </div>
         <div class="p1">
             <h2>Website</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste magnam tempore culpa fuga labore
-                laudantium asperiores cum quibusdam optio doloremque quos deleniti autem, eos quis numquam iusto! Modi,
-                impedit fugit.
+            <p>Efter jeg har testet min prototype og fået bekræftet mit formål med siden, kunne jeg gå i gang med at
+                kode. Siden er
+                kodet i HTML, CSS og så er der blevet brugt JavaScript til burgermenuen. Da siden blev kodet færdig, så
+                testede jeg den
+                ved brug af lighthousetest, heuristisk evaluering, 5sex test og tænke-højt test. <br>
+                <br>
+                I den heuristiske evaluering har jeg umiddelbart har jeg få problemer, men det viser sig også tydeligt
+                på hjemmesiden.
+                Jeg har arbejdet længe på at finde løsningen, men indtil videre har jeg ikke kunne løse det.
+                Burgermenuen er udfordrende at få til at virke i mobilversionen. I konsollen registrerer den at man
+                klikker på menuen,
+                men der kommer ikke nogen menu frem med “CV” eller “PROCESDOKUMENTATION”. Det er ikke særligt godt, at
+                den ikke virker,
+                men jeg har siddet og kigget HTML, CSS og JavaScript igennem flere gange og har ikke kunne se en fejl.
+                Jeg har undersøgt
+                på nettet og også spurgt chatgpt, men det har ikke hjulpet.
+                <br>
+                <br>
+            </p>
+        </div>
+
+        <!-- syvende billede, overskift og tekst -->
+        <div class="e_2">
+            <img src="g_6.png" class="e2" alt="e2">
+        </div>
+        <div class="p1">
+            <h2>Lighthousetest</h2>
+            <p>Generelt er resultaterne fra lighthousesten meget gode. Enkelte sider lever ikke op til den højeste
+                standard, men det er
+                pga. billedkvaliteten. Jeg har arbejdet med png, hvor jeg istedet skulle have brugt webp format. Det
+                gør, at siden
+                loader hurtigere, fordi billeder er mindre, og derfor ikke skal bruge så lang tid på at indlæse siden.
+                Det er så også
+                den eneste faktor, der er lavere niveau, for ellers klarer websitet sig godt i testen. <br>
+                <br>
+            </p>
+        </div>
+
+        <!-- ottende billede, overskift og tekst -->
+        <div class="e_2">
+            <img src="h_6.webp" class="e2" alt="e2">
+        </div>
+        <div class="p1">
+            <h2>Kode</h2>
+            <p>I @media (max-width: 800px) skal forsiden ændre sig, så billede står over teksten. I dekstop er griddet
+                lavet sådan, så
+                første(.bt1) og tredje(.bt1) billede er placeret til venstre, og teksten placeret til højre for billede.
+                Det andet(.tb1)
+                og fjerde(.tb1) billede er placeret til højre, og teksten placeret til venstre for billede. For at
+                billederne nu bliver
+                placeret over teksten og det er ens på både .bt1 og .tb1 har jeg måtte bruge -værdier i row. Griddet i
+                mobil drillede
+                mig længe, men så prøvede jeg at sætte minusværdi i grid-row, og så virkede det. Det er ikke en værdi
+                jeg har anvendt
+                før, så jeg har lidt svært ved at forstå, hvorfor den lige netop virker i dette tilfælde. <br>
+                <br>
+                Da siden er kodet færdig, validerer jeg den andre steder end min egen vs-code. Det gør jeg fordi, der
+                kan være plug-ins
+                og indstillinger i mit program, som ikke nødvendigvis er andre steder - og som giver samme resultater.
+                Jeg starter med
+                at validerer min HTML, og det har jeg gjort tre forskellige steder. To af siderne validerede uden
+                problemer, men en
+                tredje side fandt tre errors. Jeg har rettet den error, der ville have, at hver html fil fik en titel.
+                Derefter validerede jeg mit css på samme måde, og den validerer også uden problemer.
+
             </p>
         </div>
 
